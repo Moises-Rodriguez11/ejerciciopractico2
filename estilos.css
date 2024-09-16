@@ -1,0 +1,114 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #8B0000; /* Rojo oscuro */
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+nav {
+    background-color: #000000; /* Negro */
+    padding: 20px; /* Aumentar tamaño del nav */
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px; /* Hacer texto más grande */
+}
+
+nav a, .boton-libro {
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px; /* Aumentar padding */
+    background-color: #8B0000; /* Rojo oscuro */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav a:hover, .boton-libro:hover {
+    background-color: #b22222; 
+}
+
+.miniventana {
+    position: relative;
+    display: inline-block;
+}
+
+.Grados {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 200px;
+    top: 100%;
+    left: 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.Grados a {
+    color: #ffffff;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #ccc;
+}
+
+.Grados a:hover {
+    background-color: #c40303;
+}
+
+.miniventana:hover .Grados {
+    display: block;
+}
+
+form {
+    padding: 20px;
+    background-color: #ffffff;
+    max-width: 500px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form p {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button[type="submit"] {
+    background-color: #8B0000; /* Rojo oscuro */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #b22222; /* Un tono más claro de rojo oscuro */
+}
